@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:namer_app/widget/support_widget.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -14,12 +15,19 @@ class _OnboardingState extends State<Home> {
       body: Container(
         margin: EdgeInsets.only(top: 40.0, left: 20.0),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [ 
-        Text("Hey, Shivam", style: TextStyle(color: Colors.black, fontSize: 30.0, fontWeight: FontWeight.bold)),
+        Text("Hey, Shivam", 
+        style: AppWidget.boldTextFeildStyle(),
+        ),
+        Text("Good Morning", 
+        style: AppWidget.lightTextFeildStyle(),
+          ),
+          Image.asset("images/boy.jpg")
 
-      ]
-      )
-      )
+      ],
+      ),
+      ),
 
 
     );

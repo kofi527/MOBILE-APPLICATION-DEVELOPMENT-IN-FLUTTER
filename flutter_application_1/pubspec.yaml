@@ -24,5 +24,6 @@ dev_dependencies:
 flutter:
   uses-material-design: true
 
-assets:
-  - images/devops.JPG
+  assets:
+    - images/devops.JPG
+    - images/cc.jpg
