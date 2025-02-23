@@ -17,13 +17,19 @@ class _OnboardingState extends State<Home> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [ 
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
         Text("Hey, Shivam", 
         style: AppWidget.boldTextFeildStyle(),
         ),
+          Image.asset("images/boy.jpg", height: 70, width: 70, fit: BoxFit.cover,)
+          ],
+          ),
         Text("Good Morning", 
         style: AppWidget.lightTextFeildStyle(),
           ),
-          Image.asset("images/boy.jpg")
+          
 
       ],
       ),
