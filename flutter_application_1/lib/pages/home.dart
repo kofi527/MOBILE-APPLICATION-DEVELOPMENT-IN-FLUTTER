@@ -28,7 +28,8 @@ class _OnboardingState extends State<Home> {
                       "Hey, Shivam", 
                       style: AppWidget.boldTextFeildStyle(),
                 ),
-                      Text(
+             
+                     Text(
                         "Good Morning", 
                        style: AppWidget.lightTextFeildStyle(),
           ),
@@ -36,11 +37,14 @@ class _OnboardingState extends State<Home> {
             ),
                    ClipRRect(
                     borderRadius: BorderRadius.circular(30.0),
-                    child: Image.asset("images/boy.jpg", height: 70, width: 70, fit: BoxFit.cover,))
+                    child: Image.asset("images/boy.jpg", 
+                    height: 70, 
+                    width: 70, 
+                    fit: BoxFit.cover,))
           ],
           ),
   Container(
-    decoration: BoxDecoration(color: Colors.white),
+    decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(10.0)),
     width: MediaQuery.of(context).size.width,
     child: TextField(decoration: InputDecoration(border: InputBorder.none),
     )
