@@ -44,10 +44,12 @@ class _OnboardingState extends State<Home> {
           ],
           ),
   Container(
+    padding: EdgeInsets.only(top: 20.0),
     decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(10.0)),
     width: MediaQuery.of(context).size.width,
-    child: TextField(decoration: InputDecoration(border: InputBorder.none),
-    )
+    child: TextField(
+      decoration: InputDecoration(border: InputBorder.none, hintStyle: AppWidget.lightTextFeildStyle(), 
+    ))
   )
           
 
