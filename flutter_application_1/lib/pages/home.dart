@@ -50,6 +50,7 @@ class _OnboardingState extends State<Home> {
     child: TextField(
       decoration: InputDecoration(border: InputBorder.none, hintStyle: AppWidget.lightTextFeildStyle(), prefixIcon: Icon(Icons.search), hintText: "Search for products ")
     )),
+      SizedBox(height: 20.0),
       Row(
         children: [
           Text("Categories", style: TextStyle(color: Colors.black, fontSize: 20.0, fontWeight: FontWeight.bold),),
