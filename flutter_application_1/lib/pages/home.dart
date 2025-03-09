@@ -53,7 +53,7 @@ class _OnboardingState extends State<Home> {
     )),
       SizedBox(height: 20.0),
       Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween.
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Text(
             "Categories", 
@@ -61,7 +61,7 @@ class _OnboardingState extends State<Home> {
           ),
           Text(
             "see all", 
-          style: TextStyle(color: Color(0xFFfd6f3e),)
+          style: TextStyle(color: Color(0xFFfd6f3e), fontSize: 18.0, fontWeight: FontWeight.w500)
           ),
         ],
       ),

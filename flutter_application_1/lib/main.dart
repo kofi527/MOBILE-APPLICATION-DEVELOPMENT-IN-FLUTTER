@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:namer_app/pages/home.dart';
-import 'package:namer_app/pages/onboarding.dart';
 
 void main() {
   runApp(const MyApp());
