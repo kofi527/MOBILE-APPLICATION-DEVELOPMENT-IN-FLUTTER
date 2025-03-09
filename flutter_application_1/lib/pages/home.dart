@@ -43,6 +43,7 @@ class _OnboardingState extends State<Home> {
                     fit: BoxFit.cover,))
           ],
           ),
+          SizedBox(height: 30.0),
   Container(
     padding: EdgeInsets.only(top: 20.0),
     decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(10.0)),
@@ -52,13 +53,16 @@ class _OnboardingState extends State<Home> {
     )),
       SizedBox(height: 20.0),
       Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween.
         children: [
           Text(
             "Categories", 
-          style: TextStyle(
-            color: Colors.black, 
-            fontSize: 20.0, 
-            fontWeight: FontWeight.bold),),
+          style: AppWidget.semiboldTextFeildStyle()
+          ),
+          Text(
+            "see all", 
+          style: TextStyle(color: Color(0xFFfd6f3e),)
+          ),
         ],
       ),
           
