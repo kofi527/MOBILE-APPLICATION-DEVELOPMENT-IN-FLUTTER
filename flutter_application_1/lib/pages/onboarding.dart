@@ -18,7 +18,7 @@ class _OnboardingState extends State<Onboarding> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-Image.asset("images/devops.JPG"),
+Image.asset("images/gal.jpg"),
 Padding(
   padding: const EdgeInsets.only(left: 20.0),
   child:

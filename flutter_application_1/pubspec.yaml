@@ -11,10 +11,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  namer_app:
-  
-    
-
+ 
   english_words: ^4.0.0
   provider: ^6.0.0
 
@@ -28,5 +25,7 @@ flutter:
   uses-material-design: true
 
   assets:
-    - images/devops.JPG
-    - images/cc.jpg
+    - images/ear.jpg
+    - images/shirt.jpg
+    - images/tape.jpg
+    - images/gal.jpg

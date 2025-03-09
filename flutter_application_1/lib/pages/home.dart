@@ -9,6 +9,13 @@ class Home extends StatefulWidget {
   }
 
 class _OnboardingState extends State<Home> {
+List categories=[
+  "images/ear.jpg",
+  "images/gal.jpg",
+  "images/shirt.jpg",
+  "images/tape.jpg",
+];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -37,7 +44,7 @@ class _OnboardingState extends State<Home> {
             ),
                    ClipRRect(
                     borderRadius: BorderRadius.circular(30.0),
-                    child: Image.asset("images/boy.jpg", 
+                    child: Image.asset("images/ear.jpg", 
                     height: 70, 
                     width: 70, 
                     fit: BoxFit.cover,))
@@ -61,17 +68,52 @@ class _OnboardingState extends State<Home> {
           ),
           Text(
             "see all", 
-          style: TextStyle(color: Color(0xFFfd6f3e), fontSize: 18.0, fontWeight: FontWeight.w500)
+          style: TextStyle(color: Color(0xFFfd6f3e), fontSize: 18.0, fontWeight: FontWeight.bold)
           ),
         ],
       ),
-          
+       Container(
+        margin: EdgeInsets.only(left: 20.0),
+        height: 70,
+        child: ListView.builder(
+          itemCount: categories.length,
+          shrinkWrap: true, 
+          scrollDirection: Axis.horizontal,
+          itemBuilder: (context, index){
+            return CategoryTile(image: categories[index]);
+        })
+       )   
 
       ],
       ),
       ),
 
 
+    );
+  }
+}
+// creating a stateless widgets
+class CategoryTile extends StatefulWidget {
+  final String image;  
+  CategoryTile({required this.image});
+
+  @override
+  _CategoryTileState createState() => _CategoryTileState();
+}
+class _CategoryTileState extends State<CategoryTile> {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      decoration: BoxDecoration(
+        color: Colors.white, 
+        borderRadius: BorderRadius.circular(10.0)
+      ),
+      height: 90,
+      width: 90,
+      child: Column(children: [
+      Image.asset(widget.image),
+
+      ])
     );
   }
 }
