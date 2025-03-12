@@ -104,6 +104,7 @@ class _CategoryTileState extends State<CategoryTile> {
   @override
   Widget build(BuildContext context) {
     return Container(
+      padding: EdgeInsets.all(10.0),
       margin: EdgeInsets.only(right: 5.0),
       decoration: BoxDecoration(
         color: Colors.white, 
@@ -113,7 +114,7 @@ class _CategoryTileState extends State<CategoryTile> {
       width: 90,
       child: Column(children: [
       Image.asset(widget.image, height: 50, width: 50, fit: BoxFit.cover),
-
+      Icon(Icons.arrow_forward)
       ])
     );
   }
