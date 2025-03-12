@@ -111,7 +111,7 @@ class _CategoryTileState extends State<CategoryTile> {
       height: 90,
       width: 90,
       child: Column(children: [
-      Image.asset(widget.image),
+      Image.asset(widget.image, height: 50, width: 50, fit: BoxFit.cover),
 
       ])
     );
