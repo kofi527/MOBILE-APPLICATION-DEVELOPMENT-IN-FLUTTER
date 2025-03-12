@@ -104,6 +104,7 @@ class _CategoryTileState extends State<CategoryTile> {
   @override
   Widget build(BuildContext context) {
     return Container(
+      margin: EdgeInsets.only(right: 5.0),
       decoration: BoxDecoration(
         color: Colors.white, 
         borderRadius: BorderRadius.circular(10.0)
