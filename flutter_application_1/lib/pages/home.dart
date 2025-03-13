@@ -72,9 +72,28 @@ List categories=[
           ),
         ],
       ),
-       Container(
+      Row(
+         children: [
+      SizedBox(height: 20.0),
+      Container(
+      padding: EdgeInsets.all(20.0),
+      margin: EdgeInsets.only(right: 5.0),
+      decoration: BoxDecoration(
+        color: Colors.white, 
+        borderRadius: BorderRadius.circular(10.0)
+      ),
+      height: 90,
+      width: 90,
+      child: Text("ALL", style: AppWidget.semiboldTextFeildStyle(), textAlign: TextAlign.center,)
+      
+      
+    
+      ),
+    
+       Expanded(
+      child: Container(
         margin: EdgeInsets.only(left: 20.0),
-        height: 120,
+        height: 140,
         child: ListView.builder(
           itemCount: categories.length,
           shrinkWrap: true, 
@@ -82,13 +101,14 @@ List categories=[
           itemBuilder: (context, index){
             return CategoryTile(image: categories[index]);
         })
-       )   
-
-      ],
+       ),   
+       ),
+         ],
       ),
-      ),
-
-
+    ],
+     ),
+      
+    ),
     );
   }
 }
@@ -112,8 +132,12 @@ class _CategoryTileState extends State<CategoryTile> {
       ),
       height: 90,
       width: 90,
-      child: Column(children: [
-      Image.asset(widget.image, height: 50, width: 50, fit: BoxFit.cover),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+      Image.asset(widget.image, height: 50, width: 50, fit: BoxFit.cover
+      ),
+      
       Icon(Icons.arrow_forward)
       ])
     );
