@@ -105,11 +105,12 @@ List categories=[
        ),
          ],
       ),
+      SizedBox(height: 20.0),
       Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Text(
-            "Categories", 
+            "All products", 
           style: AppWidget.semiboldTextFeildStyle()
           ),
           Text(
