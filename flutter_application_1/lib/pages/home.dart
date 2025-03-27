@@ -92,8 +92,8 @@ List categories=[
     
        Expanded(
       child: Container(
-        margin: EdgeInsets.only(left: 20.0),
-        height: 140,
+             height: 140,
+        padding: EdgeInsets.zero,
         child: ListView.builder(
           itemCount: categories.length,
           shrinkWrap: true, 
