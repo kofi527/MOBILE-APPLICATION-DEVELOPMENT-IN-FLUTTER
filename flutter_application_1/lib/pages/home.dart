@@ -105,7 +105,10 @@ List categories=[
        ),
          ],
       ),
-      ListView(
+      SizedBox(height: 30.0),
+      Container(
+        height: 190,
+        child: ListView(
         shrinkWrap: true,
         scrollDirection: Axis.vertical,
         children: [
@@ -113,8 +116,10 @@ List categories=[
             child: Column(children: [
               Image.asset("images/hud.jpg", height: 60, width: 60, fit: BoxFit.cover,),
             ], ),
+          
           ),
         ],
+      ),
       ),
     ],
      ),
