@@ -119,17 +119,18 @@ List categories=[
           ),
         ],
       ),
-      SizedBox(height: 30.0),
+      SizedBox(height: 20.0),
       Container(
         height: 190,
         child: ListView(
         shrinkWrap: true,
-        scrollDirection: Axis.vertical,
+        scrollDirection: Axis.horizontal,
         children: [
           Container(
             decoration: BoxDecoration(color: Colors.white),                        
             child: Column(children: [
               Image.asset("images/hud.jpg", height: 120, width: 120, fit: BoxFit.cover,),
+              Text("shirtfox", style: AppWidget.semiboldTextFeildStyle(), textAlign: TextAlign.center,),
             ], ),
           
           ),
