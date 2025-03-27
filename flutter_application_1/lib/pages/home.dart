@@ -136,6 +136,7 @@ List categories=[
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                children: [
                 Text("\$250", style: TextStyle(color: Color(0xFFfd6f3e), fontSize: 18.0, fontWeight: FontWeight.bold),),
+              SizedBox(width: 20.0),
                 Container(
                     decoration: BoxDecoration(color: Color(0xFFfd6f3e)),
                     child: Icon(Icons.add, color: Colors.white),),
