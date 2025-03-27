@@ -127,10 +127,12 @@ List categories=[
         scrollDirection: Axis.horizontal,
         children: [
           Container(
+            padding: EdgeInsets.symmetric(horizontal: 20.0),
             decoration: BoxDecoration(color: Colors.white),                        
             child: Column(children: [
               Image.asset("images/hud.jpg", height: 120, width: 120, fit: BoxFit.cover,),
               Text("shirtfox", style: AppWidget.semiboldTextFeildStyle(), textAlign: TextAlign.center,),
+                Text("\$250", style: TextStyle(color: Color(0xFFfd6f3e), fontSize: 18.0, fontWeight: FontWeight.bold), textAlign: TextAlign.center,)
             ], ),
           
           ),
