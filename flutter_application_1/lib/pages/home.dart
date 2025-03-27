@@ -121,25 +121,29 @@ List categories=[
       ),
       SizedBox(height: 20.0),
       Container(
-        height: 190,
+        height: 240,
         child: ListView(
         shrinkWrap: true,
         scrollDirection: Axis.horizontal,
         children: [
           Container(
             padding: EdgeInsets.symmetric(horizontal: 20.0),
-            decoration: BoxDecoration(color: Colors.white),                        
+            decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(10.0)),                        
             child: Column(children: [
-              Image.asset("images/hud.jpg", height: 120, width: 120, fit: BoxFit.cover,),
+              Image.asset("images/hud.jpg", height: 150, width: 150, fit: BoxFit.cover,),
               Text("shirtfox", style: AppWidget.semiboldTextFeildStyle(), textAlign: TextAlign.center,),
+              SizedBox(height: 2.0),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                children: [
                 Text("\$250", style: TextStyle(color: Color(0xFFfd6f3e), fontSize: 18.0, fontWeight: FontWeight.bold),),
               SizedBox(width: 20.0),
                 Container(
-                    decoration: BoxDecoration(color: Color(0xFFfd6f3e)),
-                    child: Icon(Icons.add, color: Colors.white),),
+                padding: EdgeInsets.all(5.0),
+                    decoration: BoxDecoration(color: Color(0xFFfd6f3e), borderRadius: BorderRadius.circular(7.0)),
+                    child: Icon(
+                    Icons.add, 
+                    color: Colors.white),),
             ],), 
             
             ],),
