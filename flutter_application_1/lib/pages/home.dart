@@ -132,8 +132,16 @@ List categories=[
             child: Column(children: [
               Image.asset("images/hud.jpg", height: 120, width: 120, fit: BoxFit.cover,),
               Text("shirtfox", style: AppWidget.semiboldTextFeildStyle(), textAlign: TextAlign.center,),
-                Text("\$250", style: TextStyle(color: Color(0xFFfd6f3e), fontSize: 18.0, fontWeight: FontWeight.bold), textAlign: TextAlign.center,)
-            ], ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+               children: [
+                Text("\$250", style: TextStyle(color: Color(0xFFfd6f3e), fontSize: 18.0, fontWeight: FontWeight.bold),),
+                Container(
+                    decoration: BoxDecoration(color: Color(0xFFfd6f3e)),
+                    child: Icon(Icons.add, color: Colors.white),),
+            ],), 
+            
+            ],),
           
           ),
         ],
