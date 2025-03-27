@@ -105,6 +105,19 @@ List categories=[
        ),
          ],
       ),
+      Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Text(
+            "Categories", 
+          style: AppWidget.semiboldTextFeildStyle()
+          ),
+          Text(
+            "see all", 
+          style: TextStyle(color: Color(0xFFfd6f3e), fontSize: 18.0, fontWeight: FontWeight.bold)
+          ),
+        ],
+      ),
       SizedBox(height: 30.0),
       Container(
         height: 190,
@@ -113,8 +126,9 @@ List categories=[
         scrollDirection: Axis.vertical,
         children: [
           Container(
+            decoration: BoxDecoration(color: Colors.white),                        
             child: Column(children: [
-              Image.asset("images/hud.jpg", height: 60, width: 60, fit: BoxFit.cover,),
+              Image.asset("images/hud.jpg", height: 120, width: 120, fit: BoxFit.cover,),
             ], ),
           
           ),
@@ -125,6 +139,7 @@ List categories=[
      ),
       
     ),
+    
     );
   }
 }
