@@ -1,2 +1,2 @@
 # flutt
- 
+The Flutter development tools come with a graphics library and material design, and the Cupertino design allows faster operations of the app and also gives the app a stunning look, irrespective of its operating platform! The biggest advantage of Flutter is that it can be used to create cross-platform apps. Using Flutter, one can create iOS apps, Android apps, Websites, and much cross-platform software in just one go, there is no need to write code for different platforms. 
